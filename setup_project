@@ -1,0 +1,9 @@
+#! /bin/bash
+# Purpose: A shell script to set up the project in one command
+# Usage: . setup.sh
+
+make environment \
+    && source .venv/bin/activate \
+    && make requirements \
+    && pre-commit install \
+    && touch .env
