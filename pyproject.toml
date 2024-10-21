@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lightopic"
-version = "0.0.1"
+version = "0.0.1-alpha"
 description = "Slimmer version of BERTopic for transforming new data with an existing, trained model."
 authors = [{name = "Hamed Bastan-Hagh", email = "hamed@bastanhagh.com" }]
 readme = "README.md"
