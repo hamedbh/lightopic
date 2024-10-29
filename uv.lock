@@ -549,16 +549,16 @@ dev = [
 requires-dist = [
     { name = "bertopic", marker = "extra == 'bertopic'" },
     { name = "bertopic", marker = "extra == 'dev'" },
-    { name = "hdbscan", specifier = ">=0.8.38.post1" },
+    { name = "hdbscan" },
     { name = "ipykernel", marker = "extra == 'dev'" },
-    { name = "joblib", specifier = ">=1.4.2" },
-    { name = "llvmlite", specifier = "==0.43.0" },
+    { name = "joblib" },
+    { name = "llvmlite" },
     { name = "nbstripout", marker = "extra == 'dev'" },
-    { name = "numpy", specifier = ">=2.0.2" },
+    { name = "numpy" },
     { name = "pre-commit", marker = "extra == 'dev'" },
     { name = "pytest", marker = "extra == 'dev'" },
     { name = "ruff", marker = "extra == 'dev'" },
-    { name = "umap-learn", specifier = ">=0.5.6" },
+    { name = "umap-learn" },
 ]
 
 [package.metadata.requires-dev]

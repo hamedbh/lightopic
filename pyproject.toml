@@ -10,11 +10,11 @@ authors = [{name = "Hamed Bastan-Hagh", email = "hamed@bastanhagh.com" }]
 readme = "README.md"
 requires-python = ">= 3.10"
 dependencies = [
-    "hdbscan>=0.8.38.post1",
-    "joblib>=1.4.2",
-    "llvmlite==0.43.0",
-    "numpy>=2.0.2",
-    "umap-learn>=0.5.6",
+    "hdbscan",
+    "joblib",
+    "llvmlite",
+    "numpy",
+    "umap-learn",
 ]
 classifiers = [
     "License :: OSI Approved :: MIT License",
