@@ -16,14 +16,30 @@ dependencies = [
     "numpy>=2.0.2",
     "umap-learn>=0.5.6",
 ]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
 
 [project.optional-dependencies]
 dev = [
+    "bertopic",
     "ipykernel",
     "nbstripout",
     "pre-commit",
     "pytest",
     "ruff",
+]
+bertopic = [
+    "bertopic",
+]
+
+[project.urls]
+Repository = "https://github.com/hamedbh/lightopic/"
+Issues = "https://github.com/hamedbh/lightopic/issues"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    'ignore:n_jobs value \d+ overridden to \d+ by setting random_state'
 ]
 
 [tool.ruff]
@@ -63,5 +79,7 @@ docstring-code-line-length = "dynamic"
 
 [tool.uv]
 dev-dependencies = [
+    "bertopic>=0.16.4",
+    "click>=8.1.7",
     "setuptools>=75.1.0",
 ]

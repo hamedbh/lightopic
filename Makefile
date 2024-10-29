@@ -38,7 +38,7 @@ environment:
 
 ## Run the tests
 test:
-	pytest tests
+	pytest
 
 ###############################################################################
 # Self Documenting Commands                                                   #
