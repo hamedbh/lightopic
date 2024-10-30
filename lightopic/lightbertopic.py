@@ -1,7 +1,7 @@
 """A simple child class of bertopic.BERTopic to enable using Lightopic.
 
-The only addition to the base class is a method to save_lightopic: this
-will serialise a model in a format suitable for instantiating a
+The only addition to the base class is a method to `save_lightopic`:
+this will serialise a model in a format suitable for instantiating a
 Lightopic model with Lightopic.load. As part of this process it will
 train a reduced UMAP model, suitable for projecting down to two
 dimensions for plotting.
