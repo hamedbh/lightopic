@@ -4,26 +4,42 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lightopic"
-version = "0.0.1-alpha"
+version = "0.0.2"
 description = "Slimmer version of BERTopic for transforming new data with an existing, trained model."
 authors = [{name = "Hamed Bastan-Hagh", email = "hamed@bastanhagh.com" }]
 readme = "README.md"
 requires-python = ">= 3.10"
 dependencies = [
-    "hdbscan>=0.8.38.post1",
-    "joblib>=1.4.2",
-    "llvmlite==0.43.0",
-    "numpy>=2.0.2",
-    "umap-learn>=0.5.6",
+    "hdbscan",
+    "joblib",
+    "llvmlite",
+    "numpy",
+    "umap-learn",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
 ]
 
 [project.optional-dependencies]
 dev = [
+    "bertopic",
     "ipykernel",
     "nbstripout",
     "pre-commit",
     "pytest",
     "ruff",
+]
+bertopic = [
+    "bertopic",
+]
+
+[project.urls]
+Repository = "https://github.com/hamedbh/lightopic/"
+Issues = "https://github.com/hamedbh/lightopic/issues"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    'ignore:n_jobs value \d+ overridden to \d+ by setting random_state'
 ]
 
 [tool.ruff]
@@ -63,5 +79,7 @@ docstring-code-line-length = "dynamic"
 
 [tool.uv]
 dev-dependencies = [
+    "bertopic>=0.16.4",
+    "click>=8.1.7",
     "setuptools>=75.1.0",
 ]
