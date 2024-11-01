@@ -21,14 +21,14 @@ format:
 	ruff format
 
 ## Install required packages, including local/project source code	
-requirements: dev_requirements.txt requirements.txt 
+requirements: requirements-dev.txt requirements.txt 
 	uv pip sync $<
 	uv lock
 
 requirements.txt: pyproject.toml
 	uv pip compile $< -o $@ --generate-hashes
 
-dev_requirements.txt: pyproject.toml
+requirements-dev.txt: pyproject.toml
 	uv pip compile $< --all-extras -o $@ --generate-hashes
 
 ## Set up the Python environment
