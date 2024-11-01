@@ -38,7 +38,6 @@ llvmlite==0.43.0 \
     --hash=sha256:eccce86bba940bae0d8d48ed925f21dbb813519169246e2ab292b5092aba121f \
     --hash=sha256:f99b600aa7f65235a5a05d0b9a9f31150c390f31261f2a0ba678e26823ec38f7
     # via
-    #   lightopic (pyproject.toml)
     #   numba
     #   pynndescent
 numba==0.60.0 \

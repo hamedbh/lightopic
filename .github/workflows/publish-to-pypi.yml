@@ -27,7 +27,7 @@ jobs:
         - name: Run tests
           run: uv run pytest tests
         - name: Build a binary wheel and a source tarball
-          run: uv run python3 -m build
+          run: uv build
         - name: Store the distribution packages
           uses: actions/upload-artifact@v4
           with:
