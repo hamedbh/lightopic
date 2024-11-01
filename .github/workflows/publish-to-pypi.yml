@@ -22,7 +22,7 @@ jobs:
         --user
     - name: Test with pytest
       run: >-
-        pip install pytest pytest-cov
+        pip install pytest
         pytest tests
     - name: Build a binary wheel and a source tarball
       run: python3 -m build
