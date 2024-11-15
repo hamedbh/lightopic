@@ -20,7 +20,7 @@ class Lightopic:
             os.path.join(model_directory, "umap_model.joblib")
         )
         self.reduced_umap_model = joblib.load(
-            os.path.join(model_directory, "reduced_umap_model.loblib")
+            os.path.join(model_directory, "reduced_umap_model.joblib")
         )
         self.hdbscan_model = joblib.load(
             os.path.join(model_directory, "hdbscan_model.joblib")
