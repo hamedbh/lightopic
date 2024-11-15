@@ -8,15 +8,16 @@ joblib==1.4.2
     #   hdbscan
     #   pynndescent
     #   scikit-learn
-llvmlite==0.36.0
+llvmlite==0.43.0
     # via
     #   numba
     #   pynndescent
-numba==0.53.1
+numba==0.60.0
     # via
+    #   lightopic (pyproject.toml)
     #   pynndescent
     #   umap-learn
-numpy==2.1.2
+numpy==2.0.2
     # via
     #   lightopic (pyproject.toml)
     #   hdbscan
@@ -37,8 +38,6 @@ scipy==1.14.1
     #   pynndescent
     #   scikit-learn
     #   umap-learn
-setuptools==75.3.0
-    # via numba
 threadpoolctl==3.5.0
     # via scikit-learn
 tqdm==4.66.6

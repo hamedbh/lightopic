@@ -23,7 +23,7 @@ format:
 ## Install required packages, including local/project source code	
 requirements: requirements-dev.txt requirements.txt 
 	uv lock
-	uv sync
+	uv sync --all-extras
 
 requirements.txt: pyproject.toml
 	uv pip compile $< -o $@ --generate-hashes

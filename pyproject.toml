@@ -9,52 +9,36 @@ description = "Slimmer version of BERTopic for transforming new data with an exi
 authors = [{name = "Hamed Bastan-Hagh", email = "hamed@bastanhagh.com" }]
 readme = "README.md"
 requires-python = ">= 3.10"
-dependencies = [
-    "hdbscan",
-    "joblib",
-    "numpy",
-    "umap-learn",
-]
 classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
-
-[project.optional-dependencies]
-bertopic = [
-    "bertopic",
-]
-dev = [
-    "bertopic",
-    "build",
-    "ipykernel",
-    "myst-nb",
-    "nbstripout",
-    "pre-commit",
-    "pytest",
-    "ruff",
-    "sphinx-autoapi",
-    "sphinx-rtd-theme",
-    "sphinx",
-]
-
-[dependency-groups]
-dev = [
-    "bertopic>=0.16.4",
-    "build>=1.2.2.post1",
-    "ipykernel>=6.29.5",
-    "myst-nb>=1.1.2",
-    "nbstripout>=0.7.1",
-    "pre-commit>=4.0.1",
-    "pytest>=8.3.3",
-    "ruff>=0.7.2",
-    "sphinx-autoapi>=3.3.3",
-    "sphinx-rtd-theme>=3.0.1",
-    "sphinx>=8.1.3",
+dependencies = [
+    "hdbscan>=0.8.39",
+    "joblib>=1.4.2",
+    "numba>=0.59.0",
+    "numpy>=2.0.2",
+    "umap-learn>=0.5.7",
 ]
 
 [project.urls]
 Repository = "https://github.com/hamedbh/lightopic/"
 Issues = "https://github.com/hamedbh/lightopic/issues"
+
+[project.optional-dependencies]
+bertopic = [
+    "bertopic>=0.16.4",
+]
+dev = [
+    "bertopic>=0.16.4",
+    "build>=1.2.2.post1",
+    "myst-nb>=1.1.2",
+    "pre-commit>=4.0.1",
+    "pytest>=8.3.3",
+    "ruff>=0.7.4",
+    "sphinx>=8.1.3",
+    "sphinx-autoapi>=3.3.3",
+    "sphinx-rtd-theme>=3.0.2",
+]
 
 [tool.pytest.ini_options]
 filterwarnings = [
