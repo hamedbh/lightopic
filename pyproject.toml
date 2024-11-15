@@ -23,6 +23,7 @@ dependencies = [
 [project.urls]
 Repository = "https://github.com/hamedbh/lightopic/"
 Issues = "https://github.com/hamedbh/lightopic/issues"
+Documentation = "https://lightopic.readthedocs.io/en/stable/index.html"
 
 [project.optional-dependencies]
 bertopic = [
