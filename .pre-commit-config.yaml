@@ -1,20 +1,15 @@
 repos:
     - repo: https://github.com/astral-sh/ruff-pre-commit
       # Ruff version.
-      rev: v0.6.0
+      rev: v0.11.13
       hooks:
-      # Run the linter.
-        - id: ruff
+        # Run the linter.
+        - id: ruff-check
+          args: [ --fix ]
         # Run the formatter.
         - id: ruff-format
-          args: [ --check ]
     - repo: https://github.com/astral-sh/uv-pre-commit
-      rev: 0.4.29
+      # uv version.
+      rev: 0.7.13
       hooks:
         - id: uv-lock
-        - id: pip-compile
-          name: pip-compile requirements.txt
-          args: [pyproject.toml, -o requirements.txt]
-        - id: pip-compile
-          name: pip-compile requirements-dev.txt
-          args: [pyproject.toml, -o requirements-dev.txt]

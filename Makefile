@@ -21,24 +21,17 @@ format:
 	ruff format
 
 ## Install required packages, including local/project source code	
-requirements: requirements-dev.txt requirements.txt 
+requirements:
 	uv lock
 	uv sync --all-extras
 
-requirements.txt: pyproject.toml
-	uv pip compile $< -o $@ --generate-hashes
-
-requirements-dev.txt: pyproject.toml
-	uv pip compile $< --all-extras -o $@ --generate-hashes
-
 ## Set up the Python environment
 environment:
-	uv venv --seed
-	./.venv/bin/pip install -U pip setuptools
+	uv venv
 
 ## Run the tests
 test:
-	pytest
+	uv run pytest -v
 
 ###############################################################################
 # Self Documenting Commands                                                   #

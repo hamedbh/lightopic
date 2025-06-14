@@ -13,11 +13,6 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
-    "hdbscan>=0.8.39",
-    "joblib>=1.4.2",
-    "numba>=0.59.0",
-    "numpy>=2.0.2",
-    "umap-learn>=0.5.7",
 ]
 
 [project.urls]
@@ -28,18 +23,6 @@ Documentation = "https://lightopic.readthedocs.io/en/stable/index.html"
 [project.optional-dependencies]
 bertopic = [
     "bertopic>=0.16.4",
-]
-dev = [
-    "bertopic>=0.16.4",
-    "build>=1.2.2.post1",
-    "myst-nb>=1.1.2",
-    "pre-commit>=4.0.1",
-    "pytest>=8.3.3",
-    "ruff>=0.7.4",
-    "sphinx>=8.1.3",
-    "sphinx-autoapi>=3.3.3",
-    "sphinx-rtd-theme>=3.0.2",
-    "setuptools-scm>=8.1.0",
 ]
 
 [tool.pytest.ini_options]
@@ -84,3 +67,17 @@ docstring-code-line-length = "dynamic"
 
 [tool.setuptools_scm]
 version_file = "lightopic/_version.py"
+
+[dependency-groups]
+dev = [
+    "bertopic>=0.16.4",
+    "build>=1.2.2.post1",
+    "myst-nb>=1.2.0",
+    "pre-commit>=4.2.0",
+    "pytest>=8.4.0",
+    "ruff>=0.11.13",
+    "setuptools-scm>=8.3.1",
+    "sphinx>=8.1.3",
+    "sphinx-autoapi>=3.6.0",
+    "sphinx-rtd-theme>=3.0.2",
+]
